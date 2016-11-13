@@ -1,0 +1,121 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="https://www.barrelny.com/recap/2012" />
+    <link type="text/css" rel="p" href="bar.css"/>
+    <link type="text/css" media="screen" rel="stylesheet" href="https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/css/awwwards.css" />
+    <!--[if IE 9]> <script type="text/javascript"> jQuery(document).ready(function($) { _V_.options.techOrder = ["flash", "html5", "links"]; }); </script> <![endif]-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Barrel 2012 Recap</title>
+    <meta name="author" content="Barrel NY" />
+    <link rel="author" href="https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/humans.txt" />
+	
+	<title>Voices of America | yhack </title>
+	
+		
+	<meta name="description" content="Barrel Recap 2012 highlights things that happened at Barrel, a digital agency in New York." />
+	<meta name="keywords" content="barrel, new york, digital, agency, design, recap" />
+	
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+    <link rel="stylesheet" href="https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/css/style.css">
+    <link rel="stylesheet" href="https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/css/bigvideo.css">
+    <script src="https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/js/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+        
+    <header>
+                <div id="indexOnly">
+            <div id="indexImg">
+                <br><br><br><br><br><br>
+                <img src="http://i68.tinypic.com/kccpck.jpg" class="barrelHead" alt=""/>
+                </div> <p id="p01"> Issues of discrimination have only become more
+                    rampant in the U.S. in recent weeks. The hope of this site is that by sharing and visualizing these stories, we can all become more cognizant of the problems in our society, and learn from and support each other. </p>
+                                    <div id="customHome"><a href="http://laurho.maps.arcgis.com/apps/webappviewer/index.html?id=97eaf98dfa8d410e8f3f8a7a2038e1fb" class="btn_next" title="Next">Enter the Map</a></div>
+            </div>
+        </div>
+    </header>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/js/jquery.imagesloaded.min.js"></script>
+    <script src="https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/js/video.js"></script>
+    <script src="https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/js/bigvideo.js"></script>
+
+
+    <script>
+        $(document).ready(function(){  
+               var hash = window.location.hash;
+            $('#indexOnly p').css('opacity', '0');
+            $('#customHome').css('opacity', '0');
+            $('#Main').css('opacity', '0')
+
+            $('#pageNavigation').css("display", "none");
+            $('#indexOnly').delay(100).animate({ opacity: 1}, 600);
+            $('#indexImg img').delay(200).animate({ top: 0}, 2000, 'swing');
+            $('#indexOnly p').delay(1500).animate({ opacity: .8}, 2000);
+            $('#customHome').delay(1500).animate({ opacity: .8}, 2000);
+        });
+        $(function() {
+            var BV = new $.BigVideo({useFlashForFirefox:false});
+
+        if($.browser.msie||$.browser.opera){
+            BV.init();
+            BV.show('logo.png');
+        } else {
+
+
+            
+            var vids = [
+                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/office_small.mp4',
+                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/door_small.mp4',
+                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/bike_small.mp4',
+                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/pingpong_small.mp4'
+            ];
+            vids.sort(function() { return 0.5 - Math.random() }); 
+            var vidsA = [
+                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/office_small.ogv',
+                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/book.ogv',
+                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/door.ogv',
+                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/pingpong.ogv',
+                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/bike.ogv'
+            ];
+            vidsA.sort(function() { return 0.5 - Math.random() }); 
+            BV.init();
+            
+            if (Modernizr.touch) {
+                BV.show('wp-content/themes/barrel-portfolio/im/Office.jpg');
+            } else {
+                if($.browser.mozilla){
+                    BV.show(vidsA[0],  {ambient:true});
+                } else {
+                    BV.show(vids[0],  {ambient:true});
+                }
+            }
+
+           
+        }
+    });
+
+    </script>
+
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6825094-20']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
